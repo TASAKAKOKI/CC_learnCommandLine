@@ -1,0 +1,28 @@
+sed
+        sed 's/snow/rain/' forests.txt 
+    sed stands for “stream editor.” It accepts standard input and modifies it based on an expression, before displaying it as output data. It is similar to “find and replace.”
+
+    Let’s look at the expression 's/snow/rain/':
+        s: stands for “substitution.” It is always used when using sed for substitution.
+        
+        snow: the search string, or the text to find.
+    
+        rain: the replacement string, or the text to add in place.
+    
+    In this case, sed searches forests.txt for the word “snow” and replaces it with “rain.” Importantly, the above command will only replace the first instance of “snow” on a line.
+
+        sed 's/snow/rain/g' forests.txt 
+    The above command uses the <<g>> expression, meaning “global.” Here sed searches forests.txt for the word “snow” and replaces it with “rain” globally. This means all instances of “snow” on a line will be turned to “rain.”
+
+Instructions
+    1.
+    Use cat to display the contents of forests.txt
+
+    2.
+    Use sed on forests.txt to replace just the first appearance of “snow” on each line with “rain”.
+
+    3.
+    Use sed again to replace “snow” with “rain” but this time replace every occurrence of “snow”.
+
+    4.
+    Use cat again to see the changes you’ve made to forests.txt.    

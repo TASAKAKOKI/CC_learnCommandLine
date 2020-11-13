@@ -1,0 +1,20 @@
+uniq
+        $ uniq deserts.txt 
+    <<uniq>> stands for “unique.” It filters out adjacent, duplicate lines in a file. Here uniq deserts.txt filters out duplicates of "Sahara Desert", because its duplicate directly follows the previous instance. The “Kalahari Desert” duplicates are not adjacent, and thus remain.
+        $ sort deserts.txt | uniq
+    
+    A more effective way to use uniq is to call sort to alphabetize a file, and “pipe” the standard output to uniq. By piping sort deserts.txt to uniq, all duplicate lines are alphabetized (and thereby made adjacent) and filtered out.
+        sort deserts.txt | uniq > uniq-deserts.txt 
+
+    Here we simply send filtered contents to uniq-deserts.txt, which you can view with the cat command.
+
+Instructions
+    1.
+    Use cat to output the contents of deserts.txt. Note the duplicate entries.
+
+    2.
+    Use uniq to remove adjacent duplicates in deserts.txt.
+
+    3.
+        sort deserts.txt | uniq > uniq-deserts.txt 
+    Use the command above to use piping to create a new file named uniq-deserts.txt that contains a sorted version of deserts.txt with no duplicates.
