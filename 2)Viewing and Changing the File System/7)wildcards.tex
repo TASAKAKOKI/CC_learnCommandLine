@@ -1,0 +1,37 @@
+Wildcards
+    In addition to using exact filenames as arguments, we can use special characters like <<*>> to select groups of files. These special characters are called <<wildcards>>. For example, here we use cp to <<copy all files in the current working directory into another directory>>.
+        cp * my_directory/
+    
+    Here, <<w*.txt>> selects <<all files in the working directory starting with “w” (prefix) and ending with “.txt” (suffix), and copies them to my_directory/>>.
+        cp w*.txt my_directory/
+    
+    Let’s try out the wildcard symbol in this filesystem!
+
+Instructions
+    1.
+    We’re back at the root movies/ directory! From here, navigate to the comedy/ directory.
+
+    2.
+    In this directory, use the touch command create a new file named shrek.txt. After doing so, list the contents of the current directory.
+
+    3.
+    Then, using a wildcard, copy all files in the current directory into the satire/ directory.
+
+    4.
+    Without switching directories, look inside the satire/ directory, listing all its contents. You should see a copy of the files the_office.txt and shrek.txt in this directory.
+
+    5.
+    Navigate to the action/ directory using this single command:
+       cd ../action/ 
+    
+    Here we navigate up one directory, and then into the action/ directory.
+
+    6.
+    Now let’s try using the wildcard * with a prefix and a suffix.
+
+    With a single command, copy all files in the current directory that start with m and end with .txt, to the scifi/ directory.
+
+    7.
+    Without switching directories, list all the files and directories in scifi/.
+
+    You should see a copy of all text files starting with "m": matrix.txt, matrix-reloaded.txt, and matrix-revolutions.txt.
