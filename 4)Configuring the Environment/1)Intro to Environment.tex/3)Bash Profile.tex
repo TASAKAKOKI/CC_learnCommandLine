@@ -1,0 +1,46 @@
+Bash Profile
+    A bash profile is a file used to store environment settings for your terminal, and it’s accessible by the name ~/.bash_profile.
+
+    When a session starts, it loads the contents of the bash profile before executing commands.
+        The ~ represents the user’s home directory.
+        The . indicates a hidden file.
+        The name ~/.bash_profile is important, since this is how the command line recognizes the bash profile.
+
+    To open and edit the bash profile, you can use the command:
+        nano ~/.bash_profile
+    
+    When you edit the bash profile, you can add commands to execute every time a new terminal session is started.
+
+    For example, if you have an echo statement in the bash profile, that will echo when a terminal session begins.
+
+    To activate the changes made in ~/.bash_profile for the current session, use this following command:
+
+    source ~/.bash_profile
+    This makes the changes in the bash profile available right away without closing the terminal and needing to start a new session.
+
+Instructions
+    1.
+    Let’s edit the environment settings!
+
+    In the terminal, type
+        nano ~/.bash_profile 
+    
+    This opens up the existing, currently blank bash profile file in nano.
+
+    2.
+    In ~/.bash_profile, at the top of the file, type:
+        echo "Welcome, Jane Doe" 
+
+    You can use your name in place of “Jane Doe.”
+
+    Type Ctrl + O to save the file.
+
+    Press Enter to write the filename.
+
+    Type Ctrl + X to exit nano.
+
+    Then, once you’ve exited nano and are back in the terminal, press the Enter (or return for Mac) key onto a new line.
+
+    3.
+    Finally, to see this greeting immediately, use:
+        source ~/.bash_profile 

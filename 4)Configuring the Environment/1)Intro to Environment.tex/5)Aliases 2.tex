@@ -1,0 +1,34 @@
+Aliases II
+    We can add as many aliases as we want in a bash profile. Here are two more examples:
+        alias hy="history"
+    
+    hy is set as an alias for the history command in the bash profile. The alias is then made available in the current session through source. By typing hy, the command line outputs a history of commands that were entered in the current session.
+        alias ll="ls -la"
+    
+    Likewise, the code above sets ll as an alias for ls -la. Once the alias is made available in the current session through source, the command ll now executes ls -la and outputs all contents and directories in long format, including all hidden files.
+
+    Let’s add these to our bash profile!
+
+Instructions
+    1.
+    Open ~/.bash_profile in nano.
+
+    2.
+    In the bash profile, beneath the previous alias, add the alias hy for the command history.
+
+    On the next line, add the alias ll for the command ls -la.
+
+    Save the file, and close out of nano.
+
+    Once you’ve exited nano and are back in the terminal, press the Enter key onto a new line.
+
+    3.
+    In the command line, use source to activate the changes to the bash profile for the current session.
+
+    4.
+    Try out the alias hy.
+
+    5.
+    Try out the alias ll.
+
+    You should see the same result as ls -la!

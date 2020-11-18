@@ -1,0 +1,22 @@
+env
+    The env command stands for “environment,” and returns a list of the environment variables for the current user.
+
+    What happens when you type the env command?
+        env
+    
+    The env command returns a number of variables, including PATH, PWD, PS1, and HOME. To select the value of a particular environment variable, let’s say PATH, you can use the following command:
+        env | grep PATH 
+    
+    the command above displays the value of the PATH environment variable. Here the standard output of env is “piped” to the grep command. grep searches for the value of the variable PATH and outputs it to the terminal. Note that this is the same output as echo $PATH.
+
+Instructions
+    1.
+    In the command line type:
+        env
+        
+    You should see a list of variables and their values.
+
+    2.
+    Then specifically display the value of the PS1 environment variable using env, grep, and redirection.
+
+    The output should match what the command prompt looks like right now!   
